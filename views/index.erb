@@ -1,0 +1,42 @@
+<div class="container" style="background-color: #ffffff;">
+<h3>Students that graduated: </h3><br />
+			<table class="table table-hover">
+				<tbody>
+				<% @students1.each do |lname, fname| %>
+      <tr> 
+						<td>
+							<a href="/students/<%= lname %>"><%= lname %></a>
+						</td>
+						<td>
+							<a href="/students/<%= lname %>/edit" class="btn btn-info">Edit</a>
+						</td>
+						<td>
+							<a href ="/students/<%= lname %>/delete" class='btn btn-danger'>Delete</a>
+						</td>
+						 <% end %>
+						</tr>
+				</tbody>
+			</table>
+		
+
+
+<h3>Students that did not graduate: </h3> <br />
+    <table class="table table-hover">
+				<tbody>
+				<% @students2.each do |lname, fname| %>
+      <tr> 
+						<td>
+							<a href="/students/<%= lname %>"><%= lname %></a>
+						</td>
+						<td>
+							<a href="/students/<%= lname %>/edit" class="btn btn-info">Edit</a>
+						</td>
+						<td>
+							<a href ="/students/<%= lname %>/delete" class='btn btn-danger'>Delete</a>
+						</td>
+						 <% end %>
+						</tr>
+				</tbody>
+			</table>
+
+</div>

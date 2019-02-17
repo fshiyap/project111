@@ -1,0 +1,65 @@
+<form class="form-horizontal" action='https://fshiyap-67272-fshiyap.c9users.io/students/<%= @student[0][0] %>' method='post'>
+<input type='hidden' name='_method' value='patch'>
+<fieldset>
+
+<!-- Form Name -->
+<legend>Update Student</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="lname">Last Name</label>  
+  <div class="col-md-4">
+  <input id="newstudent" name="newstudent" type="text" value="<%= @student[0][0] %>" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fname">First Name</label>  
+  <div class="col-md-4">
+  <input id="fname" name="fname" type="text" value="<%= @student[0][1] %>" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="major">Major</label>  
+  <div class="col-md-4">
+  <input id="major" name="major" type="text" value="<%= @student[0][2] %>" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" value="<%= @student[0][3] %>" class="form-control input-md" required="">
+  <span class="help-block">@andrew.cmu.edu</span>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="status">Graduated?</label>
+  <div class="col-md-4">
+    <select id="status" name="status" class="form-control">
+      <option value="Graduated">Yes</option>
+      <option value="Not Graduated">No</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
